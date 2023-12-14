@@ -15,7 +15,7 @@ export default function Home() {
       <Banner />
       <section className='py-16'>
         <div className="container mx-auto px-3 ">
-          <h2 className='md:text-3xl text-xl font-bold text-center mb-10'>
+          <h2 className='md:text-4xl text-3xl font-extrabold text-center Poppins max-w-[508px] mx-auto mb-16'>
             Switch to HughesNet And Get Benefits You’ll Love
           </h2>
           <div className='grid md:grid-cols-3 grid-cols-1 gap-7'>

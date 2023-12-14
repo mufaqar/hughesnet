@@ -2,41 +2,18 @@ import React from 'react'
 
 export default function Banner() {
     return (
-        <section className='bg-[url("/images/banner.jpg")] bg-center bg-cover bg-no-repeat md:py-16 pt-16 pb-20'>
-            <div className='container mx-auto px-3 grid md:grid-cols-2 grid-cols-1 gap-7 items-center min-h-screen h-full'>
-                <div>
-                    <h1 className='md:text-6xl text-4xl font-bold text-white'>
+        <section className=''>
+            <div className='container mx-auto md:px-20 px-3 py-32 bg-[url("/images/hero.jpg")] bg-center bg-cover bg-no-repeat flex md:flex-row flex-col gap-7 items-center '>
+                <div className='sm:w-2/4 w-full'>
+                    <h1 className='sm:text-5xl text-4xl font-extrabold text-white capitalize Poppins'>
                         HughesNet Plans and Pricing for December, 2023
                     </h1>
-                    <p className='md:text-2xl text-xl font-medium text-white my-5'>
-                        Get Spectrum Internet ® today and enjoy the
-                        lightning fast speeds for Web surfing, gaming,
-                        streaming and more with no limits and overages.HughesNet Satellite Internet delivers fast speeds with multiple data options and keeps you connected no matter where you live.
+                    <p className='text-xl font-normal text-white Poppins my-4'>
+                        Get HughesNet Internet ® today and enjoy the lightning fast speeds
                     </p>
-                    <div className='flex flex-col gap-0 justify-between'>
-                        <ul className='md:text-2xl text-xl font-medium text-white mb-5 grid gap-1'>
-                            <li className='text-lg'>
-                                Built-in WiFi
-                            </li>
-                            <li className='text-lg'>
-                                Video data saver
-                            </li>
-                            <li className='text-lg'>
-                                No hard data limits
-                            </li>
-                            <li className='text-lg'>
-                                2 year price lock guarantee
-                            </li>
-                        </ul>
-                        <div>
-                            <p className='md:text-2xl text-xl font-medium text-white mb-2'>
-                                Price Starting At
-                            </p>
-                            <p className='md:text-6xl text-4xl font-bold text-[#198cc2]'>
-                                <sup className='text-lg'>$</sup>49<sub className='text-lg'>99/mo</sub>
-                            </p>
-                        </div>
-                    </div>
+                    <h3 className='sm:text-[95px] text-7xl leading-none font-extrabold text-[#B772FD] Poppins'>
+                        <sup className='text-3xl'>$</sup>24.99<sub className='text-lg'>/Month</sub>
+                    </h3>
                 </div>
             </div>
         </section>

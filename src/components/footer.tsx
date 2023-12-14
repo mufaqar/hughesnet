@@ -22,27 +22,27 @@ export default function Footer() {
                         </p>
                         <ul className='flex flex-wrap gap-1'>
                             <li>
-                                <Link href="#" className='flex w-[46px] h-[46px] justify-center items-center bg-gray-600 hover:bg-[#198cc2] text-white  rounded-[5px]'>
+                                <Link href="#" className='flex w-[46px] h-[46px] justify-center items-center bg-gray-600 hover:bg-violet-700 text-white  rounded-[5px]'>
                                     <FaFacebookF />
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className='flex w-[46px] h-[46px] justify-center items-center bg-gray-600 hover:bg-[#198cc2] text-white  rounded-[5px]'>
+                                <Link href="#" className='flex w-[46px] h-[46px] justify-center items-center bg-gray-600 hover:bg-violet-700 text-white  rounded-[5px]'>
                                     <FaTwitter />
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className='flex w-[46px] h-[46px] justify-center items-center bg-gray-600 hover:bg-[#198cc2] text-white  rounded-[5px]'>
+                                <Link href="#" className='flex w-[46px] h-[46px] justify-center items-center bg-gray-600 hover:bg-violet-700 text-white  rounded-[5px]'>
                                     <FaLinkedinIn />
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className='flex w-[46px] h-[46px] justify-center items-center bg-gray-600 hover:bg-[#198cc2] text-white  rounded-[5px]'>
+                                <Link href="#" className='flex w-[46px] h-[46px] justify-center items-center bg-gray-600 hover:bg-violet-700 text-white  rounded-[5px]'>
                                     <FaInstagram />
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className='flex w-[46px] h-[46px] justify-center items-center bg-gray-600 hover:bg-[#198cc2] text-white  rounded-[5px]'>
+                                <Link href="#" className='flex w-[46px] h-[46px] justify-center items-center bg-gray-600 hover:bg-violet-700 text-white  rounded-[5px]'>
                                     <FaYoutube />
                                 </Link>
                             </li>
@@ -54,22 +54,22 @@ export default function Footer() {
                         </h6>
                         <ul className='flex flex-col gap-4 mt-5'>
                             <li>
-                                <Link href="#" className='flex gap-2 text-base text-white/80 hover:text-[#198cc2] items-center'>
+                                <Link href="#" className='flex gap-2 text-base text-white/80 hover:text-violet-700 items-center'>
                                     <FaArrowRightLong /> About Us
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className='flex gap-2 text-base text-white/80 hover:text-[#198cc2] items-center'>
+                                <Link href="#" className='flex gap-2 text-base text-white/80 hover:text-violet-700 items-center'>
                                     <FaArrowRightLong />Our Services
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className='flex gap-2 text-base text-white/80 hover:text-[#198cc2] items-center'>
+                                <Link href="#" className='flex gap-2 text-base text-white/80 hover:text-violet-700 items-center'>
                                     <FaArrowRightLong />Our Clients
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className='flex gap-2 text-base text-white/80 hover:text-[#198cc2] items-center'>
+                                <Link href="#" className='flex gap-2 text-base text-white/80 hover:text-violet-700 items-center'>
                                     <FaArrowRightLong /> Testimonials
                                 </Link>
                             </li>
@@ -81,19 +81,19 @@ export default function Footer() {
                         </h6>
                         <ul className='flex flex-col gap-4 mt-5'>
                             <li className='flex gap-2 text-base text-white/80 items-center'>
-                                <span className='flex min-w-[30px] min-h-[30px] justify-center items-center bg-gray-600 text-[#198cc2]  rounded-[5px]'>
+                                <span className='flex min-w-[30px] min-h-[30px] justify-center items-center bg-gray-600 text-violet-700  rounded-[5px]'>
                                     <FaLocationDot />
                                 </span>Lorem Ipsum is simply is dumi omy is text dummy text.
                             </li>
                             <li className='flex gap-2 text-base text-white/80 items-center'>
-                                <span className='flex min-w-[30px] min-h-[30px] justify-center items-center bg-gray-600 text-[#198cc2]  rounded-[5px]'>
+                                <span className='flex min-w-[30px] min-h-[30px] justify-center items-center bg-gray-600 text-violet-700  rounded-[5px]'>
                                     <FaPhone />
                                 </span>
                                 <span><Link href="#"> + 012 34 56 78</Link>
                                 </span>
                             </li>
                             <li className='flex gap-2 text-base text-white/80 items-center'>
-                                <span className='flex min-w-[30px] min-h-[30px] justify-center items-center bg-gray-600 text-[#198cc2]  rounded-[5px]'>
+                                <span className='flex min-w-[30px] min-h-[30px] justify-center items-center bg-gray-600 text-violet-700  rounded-[5px]'>
                                     <FaEnvelope />
                                 </span> <Link href="#"> info@</Link>
                             </li>
@@ -115,7 +115,7 @@ export default function Footer() {
                                     id='name'
                                     placeholder="Email" />
                             </div>
-                            <button type='submit' className="text-base font-semibold text-white bg-[#198cc2] hover:bg-white hover:text-[#198cc2] px-4 py-4 rounded-[5px] w-full mt-4">
+                            <button type='submit' className="text-base font-semibold text-white bg-violet-700 hover:bg-white hover:text-violet-700 px-4 py-4 rounded-[5px] w-full mt-4">
                                 SUBMIT
                             </button>
                         </form>

@@ -1,41 +1,44 @@
 import Link from 'next/link';
 import React from 'react'
-import { CgScreenWide } from "react-icons/cg";
+import { MdOutlineScreenshotMonitor } from "react-icons/md";
 
 export default function Planbox() {
     return (
-        <div className='group'>
-            <div className='bg-[#262626] py-8 px-8 rounded-t-[5px] pb-[99px] group-hover:bg-[#198cc2]'>
-                <CgScreenWide className="text-7xl font-normal text-white text-center mx-auto" />
-                <h2 className='text-2xl font-medium text-white text-center'>
-                    Home Comfort
+        <div className='bg-white md:p-12 p-7 flex md:flex-row flex-col gap-10'>
+            <div className='md:w-2/5 w-full'>
+                <p className='text-xs font-extrabold text-violet-700 Poppins md:text-start text-center'>
+                    TV + INTERNET
+                </p>
+                <h2 className='sm:text-3xl text-3xl font-extrabold text-gray-800 Poppins md:text-start text-center my-3'>
+                    Player Bundle
                 </h2>
+                <p className='text-base leading-5 font-normal text-gray-500 Poppins md:text-start text-center max-w-[300px] md:mx-0 mx-auto'>
+                    45+ channels (up to 50 in HD), Catch Up and Box Sets – plus MaxiNet on TV (if you subscribe)
+                </p>
             </div>
-            <div className='py-8 px-8 border border-[#198cc2]/40 rounded-b-[5px] border-t-0'>
-                <div className='bg-neutral-100 p-8 rounded-lg -mt-20'>
-                    <h2 className='md:text-5xl text-2xl font-semibold '>
-                        $19
-                        <sub className='text-sm'>/mo</sub>
-                    </h2>
-                    <p className='text-base font-normal my-8'>
-                        Lorem Ipsum is simply dummy text of the printing.
+            <div className='md:w-2/5 w-full flex justify-center gap-5 items-center md:border-x border-x-0'>
+                <div>
+                    <MdOutlineScreenshotMonitor className="text-5xl text-violet-700 mx-auto" />
+                    <p className='text-base font-normal text-gray-500 text-center Poppins mt-2'>
+                        Player Tv
                     </p>
-                    <ul className='marker:content-["✓"] list-inside grid gap-3'>
-                        <li className='text-base font-normal'>
-                            Up tp 200+ channel
-                        </li>
-                        <li className='text-base font-normal'>
-                            Your Startup
-                        </li>
-                        <li className='text-base font-normal'>
-                            5 channel record
-                        </li>
-                        <li className='text-base font-normal'>
-                            Metric for Your Startup
-                        </li>
-                    </ul>
                 </div>
-                <Link href="#" className='text-base font-medium text-white uppercase bg-[#198cc2] group-hover:bg-black text-center py-5 px-8 rounded-md block w-fit min-w-[160px] mx-auto mt-8'>
+                <p className='text-base font-normal text-gray-500 text-center Poppins'>+</p>
+                <div>
+                    <MdOutlineScreenshotMonitor className="text-5xl text-violet-700 mx-auto" />
+                    <p className='text-base font-normal text-gray-500 text-center Poppins mt-2'>
+                        Up to 500Mbps
+                    </p>
+                </div>
+            </div>
+            <div className='md:w-1/5 w-full'>
+                <h3 className='sm:text-4xl text-2xl leading-none font-bold text-violet-700 text-center Poppins'>
+                    $24.99
+                </h3>
+                <p className='text-base font-normal text-gray-500 text-center Poppins mt-1'>
+                    per month
+                </p>
+                <Link href="#" className='text-base font-semibold text-white Poppins uppercase bg-violet-700 hover:bg-black text-center py-4 px-8 rounded-full block w-fit min-w-[160px] mx-auto mt-8'>
                     buy now
                 </Link>
             </div>
