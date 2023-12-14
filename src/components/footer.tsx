@@ -95,7 +95,7 @@ export default function Footer() {
                             <li className='flex gap-2 text-base text-white/80 items-center'>
                                 <span className='flex min-w-[30px] min-h-[30px] justify-center items-center bg-gray-600 text-violet-700  rounded-[5px]'>
                                     <FaEnvelope />
-                                </span> <Link href="#"> info@</Link>
+                                </span> <Link href="#"> info@cablemover.net</Link>
                             </li>
                         </ul>
                     </div>
