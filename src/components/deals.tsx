@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Deals() {
     return (
-        <section className='md:bg-[url("/images/deals.jpg")] bg-left bg-cover bg-no-repeat bg-violet-700  py-28' style={{ backgroundSize: "50% 100%" }}>
+        <section className='md:bg-[url("/images/deals.jpg")] bg-left bg-cover bg-no-repeat bg-primary  py-28' style={{ backgroundSize: "50% 100%" }}>
             <div className="container mx-auto px-3 flex md:flex-row flex-col gap-7">
                 <div className="md:w-1/2 w-full md:ml-auto md:px-20 px-4">
                     <h2 className='md:text-5xl text-3xl font-extrabold text-white Poppins mb-5'>

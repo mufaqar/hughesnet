@@ -5,20 +5,42 @@ import { FaPhone } from "react-icons/fa6";
 
 export default function Header() {
     return (
-        <header className='bg-white h-auto shadow-md py-4 sticky top-0 z-50'>
-            <div className='container mx-auto px-3 flex flex-row gap-7 justify-between items-center'>
-                <div>
-                    <Link href="/">
-                        <Image src="/images/HughesNet.jpg" alt='HughesNet' width={140} height={50} />
-                    </Link>
+        <header className='sticky top-0 z-50'>
+            <div className='py-1.5 bg-white'>
+                <div className='container mx-auto px-3'>
+                    <ul className='flex gap-2'>
+                        <li>
+                            <Link href="#" className='text-sm font-normal text-primary hover:text-black'>
+                                Account Login
+                            </Link>
+                        </li>
+                        <li className='text-black/50'>|</li>
+                        <li>
+                            <Link href="#" className='text-sm font-normal text-primary hover:text-black'>
+                                Customer Support
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
-                <div>
-                    <h5 className='text-base font-medium text-end'>
-                        Call Anytime
-                    </h5>
-                    <Link href="#" className='sm:text-2xl text-base text-violet-700 flex gap-2 items-center'>
-                        <FaPhone /> 833-592-0098
-                    </Link>
+            </div>
+            <div className='bg-white h-auto shadow-[0_3px_6px_0px_rgba(0,0,0,0.16)] py-3'>
+                <div className='container mx-auto px-3 flex flex-row gap-7 justify-between items-center'>
+                    <div>
+                        <Link href="/">
+                            <Image src="/images/HughesNet.jpg" alt='HughesNet' width={140} height={50} />
+                        </Link>
+                    </div>
+                    <div>
+
+                        <Link href="#" className='flex flex-col bg-primary w-[195px] justify-center items-center rounded-full p-1'>
+                            <span className='text-xs font-semibold text-white text-center'>
+                                Call to Get Started
+                            </span>
+                            <span className='sm:text-xl text-sm font-bold text-white flex gap-1 items-center'>
+                                <FaPhone /> 833-592-0098
+                            </span>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </header>
