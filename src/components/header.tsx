@@ -7,7 +7,7 @@ export default function Header() {
     return (
         <header className='sticky top-0 z-50'>
             <div className='py-1.5 bg-white'>
-                <div className='container mx-auto px-3'>
+                <div className='container mx-auto px-4'>
                     <ul className='flex gap-2'>
                         <li>
                             <Link href="#" className='text-sm font-normal text-primary hover:text-black'>
@@ -24,7 +24,7 @@ export default function Header() {
                 </div>
             </div>
             <div className='bg-white h-auto shadow-[0_3px_6px_0px_rgba(0,0,0,0.16)] py-3'>
-                <div className='container mx-auto px-3 flex flex-row gap-7 justify-between items-center'>
+                <div className='container mx-auto px-4 flex flex-row gap-7 justify-between items-center'>
                     <div>
                         <Link href="/">
                             <Image src="/images/HughesNet.jpg" alt='HughesNet' width={140} height={50} />

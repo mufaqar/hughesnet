@@ -1,9 +1,12 @@
-import Banner from "@/components/banner";
+
 import Benefits from "@/components/benefits";
 import Deals from "@/components/deals";
 import Discounts from "@/components/discounts";
 import EquipFees from "@/components/equip-fees";
-import Pricing_Sec from "@/components/pricing-sec";
+import Services from "@/components/services";
+import Offer from "@/components/offer";
+import Planbox from "@/components/planbox";
+// import Pricing_Sec from "@/components/pricing-sec";
 import WhyChoose from "@/components/why-choose";
 import Image from "next/image";
 import { FaWifi } from "react-icons/fa6";
@@ -12,8 +15,8 @@ import { FaWifi } from "react-icons/fa6";
 export default function Home() {
   return (
     <>
-      <Banner />
-      <section className='py-16'>
+      <Offer />
+      {/* <section className='py-16'>
         <div className="container mx-auto px-3 ">
           <h2 className='md:text-4xl text-3xl font-extrabold text-center Poppins max-w-[508px] mx-auto mb-16'>
             Switch to HughesNet And Get Benefits You’ll Love
@@ -51,8 +54,9 @@ export default function Home() {
             />
           </div>
         </div>
-      </section>
-      <Pricing_Sec />
+      </section> */}
+      <Services />
+      <Planbox  /> 
       <WhyChoose />
       <Discounts />
       <Deals />
