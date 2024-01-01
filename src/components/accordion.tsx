@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
-
+import {motion} from 'framer-motion'
 const Accordion = ({ data }: any) => {
   const [openSections, setOpenSections] = useState<number[]>([]);
 
@@ -16,7 +16,17 @@ const Accordion = ({ data }: any) => {
 
   return (
     <section className="container mx-auto px-4">
-        <h1 className="text-3xl font-bold text-center py-10">Frequently Asked Questions</h1>
+        <motion.h1
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }} className="text-3xl font-bold text-center py-10">Frequently Asked Questions</motion.h1>
     <div className="relative z-20  overflow-hidden bg-white pb-12  dark:bg-dark lg:pb-[90px] ">
       <div className="lg:grid lg:grid-cols-2 gap-12">
         {data.map((item: any, index: number) => (
@@ -26,7 +36,17 @@ const Accordion = ({ data }: any) => {
                 className="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-400 text-slate-700 rounded-t-1 group text-dark-500"
                 onClick={() => toggleAccordion(index)}
               >
-                <h1 className="font-bold lg:text-xl text-black">{item.question}</h1>
+                <motion.h1
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }} className="font-bold lg:text-xl text-black">{item.question}</motion.h1>
                 {openSections.includes(index) ? (
                   <AiOutlineMinus className="absolute right-0  font-bold text-3xl text-primary" />
                 ) : (

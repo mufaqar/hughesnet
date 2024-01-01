@@ -2,14 +2,24 @@ import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
 import { FaPhone } from "react-icons/fa6";
-
+import {motion} from 'framer-motion'
 export default function EquipFees() {
     return (
         <section className=' md:bg-[url("/images/bluebackground.png")]  bg-cover bg-no-repeat '>
              <div className='container mx-auto px-4   lg:py-16 py-8' >
-                <h2 className='md:text-3xl text-xl lg:text-white font-bold text-center Poppins  mx-auto '>
+                <motion.h1
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }} className='md:text-3xl text-xl lg:text-white font-bold text-center Poppins  mx-auto '>
                 Viasat connects you where cable and fiber cannot at a great price
-                </h2>
+                </motion.h1>
                 <p className=" pt-4 text-lg lg:text-white font-medium text-gray-500 text-center Poppins max-w-[600px] mx-auto mb-5">
                 Get incredibly fast satellite broadband internet service and get connected even in hard to reach places
                 </p>

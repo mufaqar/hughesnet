@@ -2,13 +2,24 @@ import React from 'react'
 import { FaPhone } from "react-icons/fa6";
 import Link from 'next/link';
 import { GiCheckMark } from "react-icons/gi";
+import { motion } from "framer-motion";
 import { FaMedal } from "react-icons/fa6";
 function Services() {
     return (
         <section className='mx-auto container px-4 py-4'>
 
             <div className=''>
-                <h1 className='text-center font-bold lg:text-4xl text-xl lg:py-10 py-4'>All plans include Unlimited Standard Data</h1>
+                <motion.h1
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }} className='text-center font-bold lg:text-4xl text-xl lg:py-10 py-4'>All plans include Unlimited Standard Data</motion.h1>
 
                 <div className='lg:grid  lg:grid-cols-3 gap-6 lg:space-y-0 space-y-4'>
                     {data.map((item: any, idx: number) => {

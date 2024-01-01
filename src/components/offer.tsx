@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { FaCheck } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
+import { motion } from "framer-motion";
 import Link from 'next/link';
 import { FaCaretDown } from "react-icons/fa";
 function Offer() {
@@ -10,9 +11,19 @@ function Offer() {
             <div className=' container mx-auto px-4 lg:grid lg:grid-cols-2 lg:gap-24 pt-12 pb-12 space-y-4 lg:space-y-0'>
                 <div className=''>
                     <div className='lg:w-[37rem]'>
-                        <h1 className='sm:text-[45px] pb-8 text-2xl font-bold text-black capitalize Poppins leading-tight'>
+                        <motion.h1
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }} className='sm:text-[45px] pb-8 text-2xl font-bold text-black capitalize Poppins leading-tight'>
                         Get High-Speed Internet and Straightforward Pricing with Viasat
-                        </h1>
+                        </motion.h1>
 
                     </div>
                     <div className='relative bg-white  pt-8 px-7 pb-4 rounded-[8px] shadow-[0_4px_4px_0px_rgba(0,0,0,0.2)]'>

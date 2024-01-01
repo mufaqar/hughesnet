@@ -4,11 +4,22 @@ import { MdOutlineScreenshotMonitor } from "react-icons/md";
 import { HiWrenchScrewdriver } from "react-icons/hi2";
 import { GiWorld } from "react-icons/gi";
 import { IoWifi } from "react-icons/io5";
+import { motion } from "framer-motion";
 export default function Planbox() {
     return (
         <section className=' container mx-auto px-4  '>
             <div className='bg-cover bg-no-repeat mb-20 md:bg-[url("/images/plansbg.png")]'>
-                <h1 className='font-bold text-xl lg:text-3xl text-center py-8'>All Viasat Plans Include…</h1>
+                <motion.h1
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }} className='font-bold text-xl lg:text-3xl text-center py-8'>All Viasat Plans Include…</motion.h1>
 
 
                 <div className='lg:grid lg:grid-cols-3 items-center mt-4 pb-8 lg:space-y-0 space-y-4 gap-4 px-8'>
@@ -37,7 +48,17 @@ export default function Planbox() {
                     })}
                 </div>
             </div>
-            <p className='text-[11px] text-center -mt-16'>*One-time standard installation fee may be charged at the time of sale. Monthly service fee, equipment lease fee and taxes apply. Speeds are “up to,” are not guaranteed and will vary. Service is not available in all areas. Offer may be changed or withdrawn at any time. Copyright © 2023 Viasat, Inc. All rights reserved. Viasat, the Viasat logo and the Viasat signal are registered trademarks of Viasat, Inc.</p>
+            <motion.p
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }} className='text-[11px] text-center -mt-16'>*One-time standard installation fee may be charged at the time of sale. Monthly service fee, equipment lease fee and taxes apply. Speeds are “up to,” are not guaranteed and will vary. Service is not available in all areas. Offer may be changed or withdrawn at any time. Copyright © 2023 Viasat, Inc. All rights reserved. Viasat, the Viasat logo and the Viasat signal are registered trademarks of Viasat, Inc.</motion.p>
 
         </section>
     )

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
+import {motion} from 'framer-motion'
 import { FaPhone } from "react-icons/fa6";
 export default function WhyChoose() {
     return (
@@ -12,9 +13,19 @@ export default function WhyChoose() {
                 <div className=' lg:pl-52'>
                     <div className='lg:flex '>
                     <div>
-                    <h1 className='lg:text-4xl font-bold text-white Poppins mb-3'>
+                    <motion.h1
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }} className='lg:text-4xl font-bold text-white Poppins mb-3'>
                         Upgrade your plan with Office Hours— Work from home without using your data
-                    </h1>
+                    </motion.h1>
                     <p className='md:text-2xl text-white   Poppins mb-5'>
                         From 8 a.m. - 5 p.m. daily.* Add to plans for <strong>just $40/mo.</strong> 
                     </p>
