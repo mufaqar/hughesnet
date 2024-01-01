@@ -7,3 +7,34 @@
 .Poppins {
     font-family: 'Poppins', sans-serif;
 }
+@font-face{
+    font-family: sansregular;
+    src: url('../../public/fonts/SourceSans3-Regular.ttf');
+
+}
+@font-face{
+    font-family: sansextrabold;
+    src: url('../../public/fonts/SourceSans3-ExtraBold.ttf');
+
+}
+@font-face{
+    font-family: sansbold;
+    src: url('../../public/fonts/SourceSans3-Bold.ttf');
+
+}
+@font-face{
+    font-family: sansnormal;
+    src: url('../../public/fonts/SourceSans3-SemiBold.ttf');
+
+}
+@font-face{
+    font-family: sansmedium;
+    src: url('../../public/fonts/SourceSans3-Medium.ttf');
+
+}
+
+
+
+
+
+
