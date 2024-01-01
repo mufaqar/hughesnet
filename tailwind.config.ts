@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+
+      fontFamily: {
+        sansregular: ['sansregular', 'sans-serif'],
+        sansextrabold: ['sansextrabold', 'sans-serif'],
+        sansbold: [' sansbold', 'sans-serif'],
+        sansnormal: ['sansnormal', 'sans-serif'],
+        sansmedium: ['sansmedium', 'sans-serif'],
+      },
+
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -18,8 +27,10 @@ const config: Config = {
         secondary: '#FFB22C',
         accent:'#00819d',
       },
+     
       
     },
+
   },
   plugins: [],
 }

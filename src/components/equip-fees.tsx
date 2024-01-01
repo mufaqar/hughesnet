@@ -17,14 +17,14 @@ export default function EquipFees() {
               opacity: { duration: 1 },
               ease: "easeIn",
               duration: 1,
-            }} className='md:text-4xl text-xl lg:text-white font-[sansextrabold] text-center   mx-auto '>
+            }} className='md:text-4xl text-xl lg:text-white font-sansextrabold text-center   mx-auto '>
                 Viasat connects you where cable and fiber cannot at a great price
                 </motion.h1>
-                <p className=" pt-4 text-lg lg:text-white font-[sansnormal] text-gray-500 text-center  max-w-[600px] mx-auto mb-5">
+                <p className=" pt-4 text-lg lg:text-white font-sansnormal text-gray-500 text-center  max-w-[600px] mx-auto mb-5">
                 Get incredibly fast satellite broadband internet service and get connected even in hard to reach places
                 </p>
                 <Link href="#" className='flex mt-6 m-auto flex-col lg:bg-white bg-primary w-[280px] hover:bg-secondary duration-700 items-center rounded-full p-2'>
-                        <span className='text-medium group-hover:text-primary  font-[sansbold] text-white lg:text-[#013064] text-center'>
+                        <span className='text-medium group-hover:text-primary  font-sansbold text-white lg:text-[#013064] text-center'>
                             Call to Get Started
                         </span>
                         <span className='sm:text-2xl lg:text-[#013064] group-hover:text-primary  text-white  text-sm font-bold  flex gap-1 items-center'>

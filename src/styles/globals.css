@@ -1,36 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
-
-.Poppins {
-    font-family: 'Poppins', sans-serif;
-}
 @font-face{
     font-family: sansregular;
     src: url('../../public/fonts/SourceSans3-Regular.ttf');
-
 }
 @font-face{
     font-family: sansextrabold;
     src: url('../../public/fonts/SourceSans3-ExtraBold.ttf');
-
 }
 @font-face{
     font-family: sansbold;
     src: url('../../public/fonts/SourceSans3-Bold.ttf');
-
 }
 @font-face{
     font-family: sansnormal;
     src: url('../../public/fonts/SourceSans3-SemiBold.ttf');
-
 }
 @font-face{
     font-family: sansmedium;
     src: url('../../public/fonts/SourceSans3-Medium.ttf');
-
 }
 
 

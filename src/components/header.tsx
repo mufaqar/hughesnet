@@ -10,13 +10,13 @@ export default function Header() {
                 <div className='container mx-auto px-4'>
                     <ul className='flex gap-2'>
                         <li>
-                            <Link href="#" className='text-sm font-[sansregular] text-primary hover:text-black'>
+                            <Link href="#" className='text-sm font-sansregular text-primary hover:text-black'>
                                 Account Login
                             </Link>
                         </li>
                         <li className='text-black/50'>|</li>
                         <li>
-                            <Link href="#" className='text-sm font-[sansregular] text-primary hover:text-black'>
+                            <Link href="#" className='text-sm font-sansregular text-primary hover:text-black'>
                                 Customer Support
                             </Link>
                         </li>
@@ -33,7 +33,7 @@ export default function Header() {
                     <div>
 
                         <Link href="#" className='flex flex-col bg-primary w-[195px] duration-700 group hover:bg-secondary justify-center items-center rounded-full py-1 '>
-                            <span className='text-xs group-hover:text-black font-[sansbold] text-white text-center'>
+                            <span className='text-xs group-hover:text-black font-sansbold text-white text-center'>
                                 Call to Get Started
                             </span>
                             <span className='sm:text-xl  group-hover:text-black font-bold text-white flex gap-1 items-center'>

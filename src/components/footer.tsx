@@ -22,15 +22,15 @@ export default function Footer() {
               ease: "easeIn",
               duration: 1,
             }} className='lg:flex divide-x-2 space-x-2'>
-                    <Link href={'/'} className='text-[12px] font-[sansnormal] list-none hover:text-[#a6a6a6] text-[#525252] '>Privacy Policy </Link>
-                    <Link href={'/'}  className='text-[12px] font-[sansnormal]   list-none hover:text-[#a6a6a6] text-[#525252] pl-2'>  Terms and Conditions</Link>
-                    <Link href={'/'}  className='text-[12px] font-[sansnormal]   list-none hover:text-[#a6a6a6] text-[#525252] pl-2'>Accessibility</Link>
-                    <Link href={'/'}  className='text-[12px] font-[sansnormal]  list-none hover:text-[#a6a6a6] text-[#525252] pl-2'>  Do Not Sell or Share My Personal Information</Link>
-                    <Link href={'/'}  className='text-[12px] font-[sansnormal]   list-none hover:text-[#a6a6a6] text-[#525252] pl-2'> Limit the Use of My Sensitive Information</Link>
+                    <Link href={'/'} className='text-[12px] font-sansnormal list-none hover:text-[#a6a6a6] text-[#525252] '>Privacy Policy </Link>
+                    <Link href={'/'}  className='text-[12px] font-sansnormal   list-none hover:text-[#a6a6a6] text-[#525252] pl-2'>  Terms and Conditions</Link>
+                    <Link href={'/'}  className='text-[12px] font-sansnormal   list-none hover:text-[#a6a6a6] text-[#525252] pl-2'>Accessibility</Link>
+                    <Link href={'/'}  className='text-[12px] font-sansnormal  list-none hover:text-[#a6a6a6] text-[#525252] pl-2'>  Do Not Sell or Share My Personal Information</Link>
+                    <Link href={'/'}  className='text-[12px] font-sansnormal   list-none hover:text-[#a6a6a6] text-[#525252] pl-2'> Limit the Use of My Sensitive Information</Link>
                 </motion.div>
                         
                         </div>
-                         <p className='text-[12px] font-[sansnormal]   list-none hover:text-[#a6a6a6] text-[#525252] text-end'>
+                         <p className='text-[12px] font-sansnormal   list-none hover:text-[#a6a6a6] text-[#525252] text-end'>
                             Copyright © 2023 Cablemovers.net. All rights reserved.
                         </p>
         </div>

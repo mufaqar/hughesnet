@@ -19,7 +19,7 @@ export default function Planbox() {
                         opacity: { duration: 1 },
                         ease: "easeIn",
                         duration: 1,
-                    }} className='font-[sansbold] text-xl  lg:text-3xl text-center py-8'>All Viasat Plans Include…</motion.h1>
+                    }} className='font-sansbold text-xl  lg:text-3xl text-center py-8'>All Viasat Plans Include…</motion.h1>
 
 
                 <div className='lg:grid lg:grid-cols-3 items-center mt-4 pb-8 lg:space-y-0 space-y-4 gap-4 px-8'>
@@ -33,13 +33,13 @@ export default function Planbox() {
                                         {item.icon}
                                     </div>
 
-                                    <h3 className='text-xl font-[sansextrabold] text-center  group-hover:text-white mt-10 delay-150 duration-300 ease-in-out'>
+                                    <h3 className='text-xl font-sansextrabold text-center  group-hover:text-white mt-10 delay-150 duration-300 ease-in-out'>
                                         {item.title}
                                     </h3>
-                                    <p className='font-[sansregular] text-center   group-hover:text-white max-w-[300px] mx-auto my-4 delay-150 duration-300 ease-in-out'>
+                                    <p className='font-sansregular text-center   group-hover:text-white max-w-[300px] mx-auto my-4 delay-150 duration-300 ease-in-out'>
                                         {item.description}
                                     </p>
-                                    <p className='text-xs font-[sansregular] text-center   group-hover:text-white max-w-[300px] mx-auto my-4 delay-150 duration-300 ease-in-out'>
+                                    <p className='text-xs font-sansregular text-center   group-hover:text-white max-w-[300px] mx-auto my-4 delay-150 duration-300 ease-in-out'>
                                         {item.qualifying}
                                     </p>
                                 </div>
@@ -58,7 +58,7 @@ export default function Planbox() {
                     opacity: { duration: 1 },
                     ease: "easeIn",
                     duration: 1,
-                }} className='text-[12px] font-[sansregular] text-center -mt-14'>*One-time standard installation fee may be charged at the time of sale. Monthly service fee, equipment lease fee and taxes apply. Speeds are “up to,” are not guaranteed and will vary. Service is not available in all areas. Offer may be changed or withdrawn at any time. Copyright © 2023 Viasat, Inc. All rights reserved. Viasat, the Viasat logo and the Viasat signal are registered trademarks of Viasat, Inc.</motion.p>
+                }} className='text-[12px] font-sansregular text-center -mt-14'>*One-time standard installation fee may be charged at the time of sale. Monthly service fee, equipment lease fee and taxes apply. Speeds are “up to,” are not guaranteed and will vary. Service is not available in all areas. Offer may be changed or withdrawn at any time. Copyright © 2023 Viasat, Inc. All rights reserved. Viasat, the Viasat logo and the Viasat signal are registered trademarks of Viasat, Inc.</motion.p>
 
         </section>
     )

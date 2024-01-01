@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
+import { TiPlus } from "react-icons/ti";
+import { FaMinus } from "react-icons/fa";
 import {motion} from 'framer-motion'
 const Accordion = ({ data }: any) => {
   const [openSections, setOpenSections] = useState<number[]>([]);
@@ -26,7 +27,7 @@ const Accordion = ({ data }: any) => {
               opacity: { duration: 1 },
               ease: "easeIn",
               duration: 1,
-            }} className="text-4xl font-[sansextrabold] text-center py-10">Frequently Asked Questions</motion.h1>
+            }} className="text-4xl font-sansextrabold text-center py-10">Frequently Asked Questions</motion.h1>
     <div className="relative z-20  overflow-hidden bg-white pb-12  dark:bg-dark lg:pb-[90px] ">
       <div className="lg:grid lg:grid-cols-2 gap-12">
         {data.map((item: any, index: number) => (
@@ -46,11 +47,11 @@ const Accordion = ({ data }: any) => {
               opacity: { duration: 1 },
               ease: "easeIn",
               duration: 1,
-            }} className="font-[sansbold] lg:text-2xl text-black">{item.question}</motion.h1>
+            }} className="font-sansbold lg:text-2xl text-black">{item.question}</motion.h1>
                 {openSections.includes(index) ? (
-                  <AiOutlineMinus className="absolute right-0  font-[sansextrabold] text-3xl text-primary" />
+                  <FaMinus className="absolute right-0  font-sansextrabold text-3xl text-primary" />
                 ) : (
-                  <AiOutlinePlus className="absolute right-0  font-[sansextrabold]  text-3xl text-primary" />
+                  <TiPlus  className="absolute right-0  font-sansextrabold  text-3xl text-primary" />
                 )}
               </button>
             </h6>
@@ -63,7 +64,7 @@ const Accordion = ({ data }: any) => {
                 openSections.includes(index) ? "h-auto" : "h-0 overflow-hidden"
               } transition duration-1000 ease-in-out transform`}
             >
-              <div className="p-4 text-medium leading-normal font-[sansregular] text-blue-gray-500/80">
+              <div className="p-4 text-medium leading-normal font-sansregular text-blue-gray-500/80">
                 {item.answer}
               </div>
             </div>

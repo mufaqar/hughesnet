@@ -23,10 +23,10 @@ export default function WhyChoose() {
               opacity: { duration: 1 },
               ease: "easeIn",
               duration: 1,
-            }} className='lg:text-4xl font-[sansbold] text-white leading-5 mb-3'>
+            }} className='lg:text-4xl font-sansbold text-white leading-5 mb-3'>
                         Upgrade your plan with Office Hours— Work from home without using your data
                     </motion.h1>
-                    <p className='md:text-2xl text-white font-[sansregular] mb-5'>
+                    <p className='md:text-2xl text-white font-sansregular mb-5'>
                         From 8 a.m. - 5 p.m. daily.* Add to plans for <strong>just $40/mo.</strong> 
                     </p>
                     </div>
@@ -43,7 +43,7 @@ export default function WhyChoose() {
                     </div>
                     </div>
                   
-                    <p className=' text-[12px] font-[sansregular] lg:text-[#e3e3e3] lg:pt-0 pt-4 text-black leading-5 '>
+                    <p className=' text-[12px] font-sansregular lg:text-[#e3e3e3] lg:pt-0 pt-4 text-black leading-5 '>
                         *Office Hours is an optional service for use with web browsing, bulk transfers, real-time communications, network storage, social networking (excluding embedded streaming videos), VPN, and email. Not all internet traffic sources are identifiable and available to benefit from Office Hours. Office Hours does not include video streaming, real-time entertainment, peer-to-peer networking, gaming, and any other categories of internet content not specifically stated above. Office Hours is available 8:00 am to 5:00 pm local time, daily. Available time may vary by location. For additional details, visit https://vsat.co/officehoursfaqs. Office Hours is not available on CAF-II Service plans. Office Hours users who use more than 2 TB in a month, which represents the top percentage of users during the hours of 8 am to 5 pm local time, may be contacted and asked to reduce usage of Office Hours. If your usage pattern exceeds the prior referenced amount for two months in a six-month period, Viasat may terminate or suspend your use of Office Hours.
                     </p>
                   
