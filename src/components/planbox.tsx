@@ -10,55 +10,55 @@ export default function Planbox() {
         <section className=' container mx-auto px-4  '>
             <div className='bg-cover bg-no-repeat mb-20 md:bg-[url("/images/plansbg.png")]'>
                 <motion.h1
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{
-              delay: 0.2,
-              x: { type: "spring", stiffness: 60 },
-              opacity: { duration: 1 },
-              ease: "easeIn",
-              duration: 1,
-            }} className='font-bold text-xl lg:text-3xl text-center py-8'>All Viasat Plans Include…</motion.h1>
+                    initial={{ x: -100, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        delay: 0.2,
+                        x: { type: "spring", stiffness: 60 },
+                        opacity: { duration: 1 },
+                        ease: "easeIn",
+                        duration: 1,
+                    }} className='font-bold text-xl lg:text-3xl text-center py-8'>All Viasat Plans Include…</motion.h1>
 
 
                 <div className='lg:grid lg:grid-cols-3 items-center mt-4 pb-8 lg:space-y-0 space-y-4 gap-4 px-8'>
                     {data.map((item: any, idx: number) => {
                         return (
 
-                            <div className='relative rounded-2xl border bg-white lg:h-[220px] group'>
-                <div className='bg-primary absolute top-0 left-0 right-0 h-0 group-hover:h-full delay-150 duration-300 ease-in-out w-full rounded-2xl z-auto'></div>
-                <div className=' py-9 px-7 relative z-[1] '>
-                    <div className='absolute -top-10 left-1/2 -translate-x-1/2 w-[80px] h-[80px] mx-auto rounded-full bg-white p-3 border  text-primary text-6xl group-hover:text-white group-hover:bg-primary flex items-center justify-center delay-150 duration-300 ease-in-out'>
-                        {item.icon}
-                    </div>
-                    
-                    <h3 className='text-xl font-bold text-center Poppins text-gray-800 group-hover:text-white mt-6 delay-150 duration-300 ease-in-out'>
-                        {item.title}
-                    </h3>
-                    <p className='text-base font-normal text-center Poppins text-gray-500 group-hover:text-white max-w-[300px] mx-auto my-4 delay-150 duration-300 ease-in-out'>
-                        {item.description}
-                    </p>
-                    <p className='text-base font-normal text-center Poppins text-gray-500 group-hover:text-white max-w-[300px] mx-auto my-4 delay-150 duration-300 ease-in-out'>
-                        {item.qualifying}
-                    </p>
-                </div>
-            </div>
+                            <div className='relative rounded-2xl border bg-white lg:h-[220px] group' key={idx}>
+                                <div className='bg-primary absolute top-0 left-0 right-0 h-0 group-hover:h-full delay-150 duration-300 ease-in-out w-full rounded-2xl z-auto'></div>
+                                <div className=' py-9 px-7 relative z-[1] '>
+                                    <div className='absolute -top-10 left-1/2 -translate-x-1/2 w-[80px] h-[80px] mx-auto rounded-full bg-white p-3 border  text-primary text-6xl group-hover:text-white group-hover:bg-primary flex items-center justify-center delay-150 duration-300 ease-in-out'>
+                                        {item.icon}
+                                    </div>
+
+                                    <h3 className='text-xl font-bold text-center Poppins text-gray-800 group-hover:text-white mt-6 delay-150 duration-300 ease-in-out'>
+                                        {item.title}
+                                    </h3>
+                                    <p className='text-base font-normal text-center Poppins text-gray-500 group-hover:text-white max-w-[300px] mx-auto my-4 delay-150 duration-300 ease-in-out'>
+                                        {item.description}
+                                    </p>
+                                    <p className='text-base font-normal text-center Poppins text-gray-500 group-hover:text-white max-w-[300px] mx-auto my-4 delay-150 duration-300 ease-in-out'>
+                                        {item.qualifying}
+                                    </p>
+                                </div>
+                            </div>
                         )
                     })}
                 </div>
             </div>
             <motion.p
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{
-              delay: 0.2,
-              x: { type: "spring", stiffness: 60 },
-              opacity: { duration: 1 },
-              ease: "easeIn",
-              duration: 1,
-            }} className='text-[11px] text-center -mt-16'>*One-time standard installation fee may be charged at the time of sale. Monthly service fee, equipment lease fee and taxes apply. Speeds are “up to,” are not guaranteed and will vary. Service is not available in all areas. Offer may be changed or withdrawn at any time. Copyright © 2023 Viasat, Inc. All rights reserved. Viasat, the Viasat logo and the Viasat signal are registered trademarks of Viasat, Inc.</motion.p>
+                initial={{ x: -100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{
+                    delay: 0.2,
+                    x: { type: "spring", stiffness: 60 },
+                    opacity: { duration: 1 },
+                    ease: "easeIn",
+                    duration: 1,
+                }} className='text-[11px] text-center -mt-16'>*One-time standard installation fee may be charged at the time of sale. Monthly service fee, equipment lease fee and taxes apply. Speeds are “up to,” are not guaranteed and will vary. Service is not available in all areas. Offer may be changed or withdrawn at any time. Copyright © 2023 Viasat, Inc. All rights reserved. Viasat, the Viasat logo and the Viasat signal are registered trademarks of Viasat, Inc.</motion.p>
 
         </section>
     )

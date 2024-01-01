@@ -10,23 +10,23 @@ function Services() {
 
             <div className=''>
                 <motion.h1
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{
-              delay: 0.2,
-              x: { type: "spring", stiffness: 60 },
-              opacity: { duration: 1 },
-              ease: "easeIn",
-              duration: 1,
-            }} className='text-center font-bold lg:text-4xl text-xl lg:py-10 py-4'>All plans include Unlimited Standard Data</motion.h1>
+                    initial={{ x: -100, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        delay: 0.2,
+                        x: { type: "spring", stiffness: 60 },
+                        opacity: { duration: 1 },
+                        ease: "easeIn",
+                        duration: 1,
+                    }} className='text-center font-bold lg:text-4xl text-xl lg:py-10 py-4'>All plans include Unlimited Standard Data</motion.h1>
 
                 <div className='lg:grid  lg:grid-cols-3 gap-6 lg:space-y-0 space-y-4'>
                     {data.map((item: any, idx: number) => {
 
                         return (
 
-                            <div className='border-[1px] border-black/20 box-border rounded-md bg-[#fafafa]'>
+                            <div className='border-[1px] border-black/20 box-border rounded-md bg-[#fafafa]' key={idx}>
                                 <h1 className='bg-primary  rounded-t-md text-center text-white font-bold py-4 '>
                                     <li className='list-none flex absolute -mt-4 text-7xl text-amber-400'><FaMedal /></li>
                                     {item.title}

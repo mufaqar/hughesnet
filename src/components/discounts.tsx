@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FaPhone } from "react-icons/fa6";
 import React from 'react'
 import { GiCheckMark } from "react-icons/gi";
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 export default function Discounts() {
     return (
         <section className='lg:py-16 py-4 bg-cover bg-no-repeat md:bg-[url("/images/goodbye.png")]' >
@@ -11,16 +11,16 @@ export default function Discounts() {
                 <div>
                     <div className=' lg:w-[35rem]'>
                         <motion.h1
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{
-              delay: 0.2,
-              x: { type: "spring", stiffness: 60 },
-              opacity: { duration: 1 },
-              ease: "easeIn",
-              duration: 1,
-            }} className='lg:text-4xl text-lg font-medium  Poppins mb-5'>
+                            initial={{ x: -100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                delay: 0.2,
+                                x: { type: "spring", stiffness: 60 },
+                                opacity: { duration: 1 },
+                                ease: "easeIn",
+                                duration: 1,
+                            }} className='lg:text-4xl text-lg font-medium  Poppins mb-5'>
                             Say Goodbye To Slow Internet.Get Connected Today -
                             Hassle-Free.
 
@@ -38,7 +38,7 @@ export default function Discounts() {
                     <ul className='lg:flex  lg:space-x-10'>
                         {data.map((item: any, idx: number) => {
                             return (
-                                <div className=''>
+                                <div className='' key={idx}>
                                     <li className='flex items-center text-primary space-x-2'><GiCheckMark /> <span className='text-[#1e2832] font-bold text-lg whitespace-nowrap'>{item.title}</span></li>
                                     <p className='text-normal px-2 text-[#1d303b]'>{item.des}</p>
                                 </div>
@@ -58,7 +58,7 @@ export default function Discounts() {
 
                 </div>
 
-                
+
             </div>
         </section>
     )
