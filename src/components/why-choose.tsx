@@ -32,7 +32,7 @@ export default function WhyChoose() {
                     </div>
                     </div>
                   
-                    <p className=' text-[11px] text-[#e3e3e3]  leading-tight Poppins '>
+                    <p className=' text-[11px] lg:text-[#e3e3e3] lg:pt-0 pt-4 text-black leading-tight Poppins '>
                         *Office Hours is an optional service for use with web browsing, bulk transfers, real-time communications, network storage, social networking (excluding embedded streaming videos), VPN, and email. Not all internet traffic sources are identifiable and available to benefit from Office Hours. Office Hours does not include video streaming, real-time entertainment, peer-to-peer networking, gaming, and any other categories of internet content not specifically stated above. Office Hours is available 8:00 am to 5:00 pm local time, daily. Available time may vary by location. For additional details, visit https://vsat.co/officehoursfaqs. Office Hours is not available on CAF-II Service plans. Office Hours users who use more than 2 TB in a month, which represents the top percentage of users during the hours of 8 am to 5 pm local time, may be contacted and asked to reduce usage of Office Hours. If your usage pattern exceeds the prior referenced amount for two months in a six-month period, Viasat may terminate or suspend your use of Office Hours.
                     </p>
                   
