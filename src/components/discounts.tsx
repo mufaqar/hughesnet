@@ -1,57 +1,71 @@
 import Image from 'next/image'
+import Link from 'next/link';
+import { FaPhone } from "react-icons/fa6";
 import React from 'react'
-
+import { GiCheckMark } from "react-icons/gi";
 export default function Discounts() {
     return (
-        <section className='py-16 bg-cover bg-no-repeat' style={{ backgroundImage: `url('/images/goodbye.png')`, height: '400px' }}>
+        <section className='lg:py-16 py-4 bg-cover bg-no-repeat md:bg-[url("/images/goodbye.png")]' >
             <div className='container mx-auto px-4 grid md:grid-cols-2 grid-cols-1 gap-7 items-center'>
-                <div className=' w-[35rem]'>
-                    <h1 className='text-4xl   Poppins mb-3'>
-                        Say Goodbye To Slow Internet.Get Connected Today -
-                        Hassle-Free.
-                        
-                    </h1>
-                    <p className='md:text-sm   text-gray-800 Poppins mb-5'>
-                        Viasat offers high-speed satellite internet service in the continental
-                        U.S., with unlimited data plans and <strong>speeds up to 150 Mbps </strong> on select
-                        plans in select areas.
-                    </p>
-                    <p className='text-lg font-medium text-gray-500 Poppins'>
-                       
-                    </p>
-                    <ul>
+                <div>
+                    <div className=' lg:w-[35rem]'>
+                        <h1 className='lg:text-4xl text-lg font-medium  Poppins mb-5'>
+                            Say Goodbye To Slow Internet.Get Connected Today -
+                            Hassle-Free.
+
+                        </h1>
+                        <p className='md:text-sm   text-gray-800 Poppins mb-5'>
+                            Viasat offers high-speed satellite internet service in the continental
+                            U.S., with unlimited data plans and <strong>speeds up to 150 Mbps </strong> on select
+                            plans in select areas.
+                        </p>
+                        <p className='text-lg font-medium text-gray-500 Poppins'>
+
+                        </p>
+
+                    </div>
+                    <ul className='lg:flex  lg:space-x-10'>
+                        {data.map((item: any, idx: number) => {
+                            return (
+                                <div className=''>
+                                    <li className='flex items-center text-primary space-x-2'><GiCheckMark /> <span className='text-[#1e2832] font-bold text-lg whitespace-nowrap'>{item.title}</span></li>
+                                    <p className='text-normal px-2 text-[#1d303b]'>{item.des}</p>
+                                </div>
+                            )
+                        })}
 
                     </ul>
-                </div>
-                <div>
-                    <div className='relative'>
-                        <div className='border-2 border-primary rounded-full md:w-[120px] w-[100px] md:h-[120px] h-[100px] flex flex-col items-center justify-center absolute top-1/2 -translate-y-1/2 left-5 -rotate-45'>
-                            <p className='md:text-3xl text-xl font-bold text-primary text-center Poppins'> 150</p>
-                            <p className='text-sm font-semibold text-primary text-center Poppins'>mbps</p>
-                        </div>
 
-                        <div className='bg-primary rounded-full md:w-[120px] w-[100px] md:h-[120px] h-[100px] flex flex-col items-center justify-center absolute -top-5 right-5 rotate-12'>
-                            <p className='md:text-3xl text-xl font-bold text-white text-center Poppins'> Full</p>
-                            <p className='text-sm font-normal text-white text-center Poppins'>Speed</p>
-                        </div>
-                    </div>
+                    <Link href="#" className='flex mt-6 flex-col bg-primary w-[230px]   items-center rounded-full p-2'>
+                        <span className='text-xs font-semibold text-white text-center'>
+                            Call to Get Started
+                        </span>
+                        <span className='sm:text-xl text-sm font-bold text-white flex gap-1 items-center'>
+                            <FaPhone /> 833-592-0098
+                        </span>
+                    </Link>
+
                 </div>
+
+                
             </div>
         </section>
     )
 }
 
 
-export const data =[
+export const data = [
     {
-title:"Affordable plans"
-
+        title: "Affordable plans",
+        des: "to fit your needs"
     },
     {
-title:"Super-fast speeds"
+        title: "Super-fast speeds",
+        des: "to take you to the next level"
     },
     {
-        title:"Viasat Shield"
+        title: "Viasat Shield",
+        des: "to protect your home internet network"
 
     },
 ]

@@ -6,7 +6,7 @@ import EquipFees from "@/components/equip-fees";
 import Services from "@/components/services";
 import Offer from "@/components/offer";
 import Planbox from "@/components/planbox";
-// import Pricing_Sec from "@/components/pricing-sec";
+import Accordion from '@/components/accordion'
 import WhyChoose from "@/components/why-choose";
 import Image from "next/image";
 import { FaWifi } from "react-icons/fa6";
@@ -61,6 +61,8 @@ export default function Home() {
       <Discounts />
       <Deals />
       <EquipFees />
+      <Accordion/>
+      
     </>
   )
 }

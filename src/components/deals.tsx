@@ -1,36 +1,36 @@
 import Image from 'next/image'
+import Link from 'next/link'
+import { FaPhone } from "react-icons/fa6";
 import React from 'react'
-
+import { GiCheckMark } from "react-icons/gi";
 export default function Deals() {
     return (
-        <section className='md:bg-[url("/images/deals.jpg")] bg-left bg-cover bg-no-repeat bg-primary  py-28' style={{ backgroundSize: "50% 100%" }}>
-            <div className="container mx-auto px-3 flex md:flex-row flex-col gap-7">
-                <div className="md:w-1/2 w-full md:ml-auto md:px-20 px-4">
-                    <h2 className='md:text-5xl text-3xl font-extrabold text-white Poppins mb-5'>
-                        Current HughesNet Internet Deals
+        <section className='lg:m-12'>
+        <div className='container mx-auto px-4  md:bg-[url("/images/voicesever.png")] bg-left bg-contain bg-no-repeat   ' >
+            <div className="flex md:flex-row flex-col gap-7">
+                <div className="md:w-1/2 w-full md:ml-auto md:px-20 px-4 md:py-16">
+                    <h2 className='md:text-3xl  text-lg font-extrabold text-[#000] Poppins mb-5'>
+                    Add Voice service to Viasat high-speed satellite internet and save
                     </h2>
-                    <p className="text-lg font-normal text-white Poppins mb-5">
-                        HughesNet is a satellite internet service provider offering high speed internet service to the rural and remote areas where other internet options are limited or not available such as DSL, Cable and Fiber. HughesNet is offering the following incentives to its new customers
+                    <p className="text-normal font-normal text-[#1e2732] Poppins mb-5">
+                    Add Viasat Voice home phone service and get <strong>$10/month off </strong> your Voice service for 3 months.
                     </p>
                     <ul className="grid gap-1">
-                        <li className="text-lg font-normal text-white Poppins">
-                            Get a $100 prepaid MasterCard via rebate (offer expires 8/30/2023)
+                        <li className="text-lg flex space-x-2 font-bold  text-[cadetblue] Poppins"><GiCheckMark /> 
+                       <span> Unlimited Local and long distance calls within the U.S. and Canada</span>
                         </li>
-                        <li className="text-lg font-normal text-white Poppins">
-                            Free Professional Installation
-                        </li>
-                        <li className="text-lg font-normal text-white Poppins">
-                            Save $25 off per month for six or twelve months on all plans (except 15 GB)
-                        </li>
-                        <li className="text-lg font-normal text-white Poppins">
-                            $99 credit for lease setup fee in select areas
-                        </li>
-                        <li className="text-lg font-normal text-white Poppins">
-                            Free HughesNet ATA (Voice Equipment)
-                        </li>
+                        <Link href="#" className='flex mt-6 flex-col bg-primary w-[230px]   items-center rounded-full p-2'>
+                        <span className='text-xs font-semibold text-white text-center'>
+                            Call to Get Started
+                        </span>
+                        <span className='sm:text-xl text-sm font-bold text-white flex gap-1 items-center'>
+                            <FaPhone /> 833-592-0098
+                        </span>
+                    </Link>
                     </ul>
                 </div>
             </div>
+        </div>
         </section>
     )
 }

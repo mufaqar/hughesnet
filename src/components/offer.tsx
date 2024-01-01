@@ -7,9 +7,9 @@ import { FaCaretDown } from "react-icons/fa";
 function Offer() {
     return (
         <section className='bg-[url("/images/promo-bg.png")] bg-center bg-cover bg-no-repeat' >
-            <div className=' container mx-auto px-4 grid grid-cols-2 gap-24 pt-12 pb-12'>
+            <div className=' container mx-auto px-4 lg:grid lg:grid-cols-2 lg:gap-24 pt-12 pb-12 space-y-4 lg:space-y-0'>
                 <div className=''>
-                    <div className='w-[37rem]'>
+                    <div className='lg:w-[37rem]'>
                         <h1 className='sm:text-[45px] pb-8 text-2xl font-bold text-black capitalize Poppins leading-tight'>
                         Get High-Speed Internet and Straightforward Pricing with Viasat
                         </h1>
@@ -29,7 +29,7 @@ function Offer() {
                             <h2 className='sm:text-[46px] text-4xl font-bold text-primary underline'>
                                 $300 OFF
                             </h2>
-                            <p className='text-base leading-3  text-[#26272b] pl-2 font-bold '>
+                            <p className='text-base leading-3  text-[#26272b] lg:pl-2 font-bold lg:pt-0 pt-2'>
                                 on select plans <br /><br/>
                                 in select areas
                             </p>
@@ -52,19 +52,19 @@ function Offer() {
 
                 <div className='lg:w-[30rem] bg-white rounded-md'>
                     <div className='text-center'>
-                        <h1 className='bg-[#0c3950] text-white font-bold text-lg py-4'>Start here to see Recommended plans</h1>
+                        <h1 className='bg-[#0c3950] text-white font-bold lg:text-lg py-4'>Start here to see Recommended plans</h1>
                         <li className='flex items-center justify-center  -mt-5 list-none text-5xl text-[#0c3950]'>
                             <FaCaretDown />
                         </li>
                     </div>
 
-                    <div className='container mx-auto px-20'>
+                    <div className='container mx-auto lg:px-20 px-4 pb-6 lg:pb-0'>
                         <div>
-                            <h1 className='font-bold text-2xl text-center pb-4  text-[#26272b]'>What do you primarily use internet for?
+                            <h1 className='font-bold lg:text-2xl text-center pb-4  text-[#26272b]'>What do you primarily use internet for?
                             </h1>
                             <ul className='space-y-4 cursor-pointer'>
                                 <li className='bg-primary font-bold rounded-full py-4 text-center text-white '>
-                                    <Link href={'/'}>StreamingStreaming</Link>
+                                    <Link href={'/'}>Streaming</Link>
                                 </li>
                                 <li className='bg-primary font-bold rounded-full py-4 text-center text-white '>
                                     <Link href={'/'}>Browsing</Link>

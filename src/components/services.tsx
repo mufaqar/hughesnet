@@ -8,9 +8,9 @@ function Services() {
         <section className='mx-auto container px-4 py-4'>
 
             <div className=''>
-                <h1 className='text-center font-bold text-4xl py-10'>All plans include Unlimited Standard Data</h1>
+                <h1 className='text-center font-bold lg:text-4xl text-xl lg:py-10 py-4'>All plans include Unlimited Standard Data</h1>
 
-                <div className='grid grid-cols-3 gap-6'>
+                <div className='lg:grid  lg:grid-cols-3 gap-6 lg:space-y-0 space-y-4'>
                     {data.map((item: any, idx: number) => {
 
                         return (
